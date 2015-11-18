@@ -12,14 +12,14 @@
   position: relative;
 }
 
-.orcid-profile-uri {
+/*.orcid-profile-uri {
   position: absolute;
   display: block;
   top: 0;
   right: 0;
   width: auto;
   height: 1.5em;
-}
+}*/
 
 #orcid-widget-js .orcid-uri {
     margin: 4px 2px 20px 0px;
