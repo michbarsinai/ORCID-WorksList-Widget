@@ -6,8 +6,21 @@
     margin: 5px 0 5px 0;
 }
 
-#orcid-widget-js .orcid-profile .orcid-works {
+.orcid-works {
+  list-style: none;
+  padding-left: 0;
+  position: relative;
 }
+
+.orcid-profile-uri {
+  position: absolute;
+  display: block;
+  top: 0;
+  right: 0;
+  width: auto;
+  height: 1.5em;
+}
+
 #orcid-widget-js .orcid-uri {
     margin: 4px 2px 20px 0px;
     display: block;
@@ -20,6 +33,46 @@
 	font-weight: bold;
 	color: red;
 }
- .orcid-work_odd {
+
+.orcid-work {
+  padding: 3px;
+  margin: 3px;
+  -moz-box-shadow: inset 0 1px 2px rgba(0,0,0,.2);
+  -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,.2);
+  box-shadow: inset 0 1px 2px rgba(0,0,0,0.2);
+}
+
+.orcid-work-odd {
     background-color: #eee;
+}
+
+.orcid-work-title a {
+  font-weight: bold;
+}
+
+.orcid-publication-date {
+  padding-left: 0.5em;
+  font-family: Monaco, Menlo, Courier, monospace;
+  font-size: smaller;
+}
+.orcid-citation {
+  border-radius: 5px;
+  padding: 5px;
+  font-size: smaller;
+  background-color: rgba(0,0,0,0.05);
+}
+
+.orcid-journal {
+  font-style: italic;
+}
+
+ul.orcid-external-ids {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul.orcid-external-ids li {
+  display: inline-block;
+  margin-right: 0.5em;
 }
