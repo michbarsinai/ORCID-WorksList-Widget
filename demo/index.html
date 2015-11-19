@@ -1,14 +1,37 @@
 <html>
-  <head>
-     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-     <title>ORCID Works List - jQuery ORCID Widget</title>
-     <script type='text/javascript' src='http://code.jquery.com/jquery-1.9.1.js'></script>
-     <script type='text/javascript' src="../jquery.orcidWidget.js"></script>
-     <link rel="stylesheet" type="text/css" href="../orcid-widget.css">
-  </head>
-  <body>
-    <div id="orcid-widget-js" data-orcids="0000-0002-0153-8465">
-      <!-- Container for ORCID profile widget -- Add ORCIDs delimited by commas to -- the data-orcids attribute. -->
-    </div>
-  </body>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <title>ORCID Works List - jQuery ORCID Widget</title>
+        <script type='text/javascript' src='http://code.jquery.com/jquery-1.9.1.js'></script>
+        <script type='text/javascript' src="../jquery.orcidWorksWidget.js"></script>
+        <link rel="stylesheet" type="text/css" href="../orcid-widget.css">
+    </head>
+    <body>
+
+        <h3>Works A</h3>
+        <div data-role="orcid-works" data-orcids="0000-0002-0153-8465">
+            <div class="orcid-loader">
+                <img src="../gears.svg" alt="loading animation" >
+                <br>
+                Loading data from ORCiD...
+            </div>
+        </div>
+
+        <hr>
+        <h3>Works B</h3>
+        <div data-role="orcid-works" data-orcids="0000-0002-6648-009X">
+            <!-- Container for ORCID profile widget -- Add ORCIDs delimited by commas to -- the data-orcids attribute. -->
+        </div>
+
+        <hr>
+        <h3>Sample loader</h3>
+        Included here to show the loader animation styling.
+        <div class="orcid-loader">
+            <img src="../gears.svg" alt="loading animation" >
+            <br>
+            Loading data from ORCiD...
+            <br>
+            <small>Not really, this is here to show the loader. The two divs above should load the ORCiD data</small>
+        </div>
+    </body>
 </html>

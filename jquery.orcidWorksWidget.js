@@ -31,22 +31,29 @@ externalWorkHandlers["HANDLE"] = function( extWorkPart ) {
 };
 
 $jq(document).ready(function () {
-    var widget = $jq('#orcid-widget-js').clone(),
-            orcids = widget.data(orcids).orcids.split(","),
-            profile = null;
-    $jq(orcids).each(function (name, value) {
-        var profile_promise = get_orcid_profile(value.trim());
-        profile_promise.success(function (data) {
-            profile = data['orcid-profile'];
-            widget.append(set_widget_content(profile));
+    
+    var widgetDivs = $jq.find("[data-role='orcid-works']");
+    $jq(widgetDivs).each( function( idx, widget){
+        var $widget = $jq(widget);
+        var orcids = $widget.data(orcids).orcids.split(",");
+        var profile = null;
+        $jq(orcids).each(function (name, value) {
+            var profile_promise = get_orcid_profile(value.trim());
+            profile_promise.success(function (data) {
+                profile = data['orcid-profile'];
+                $widget.contents().detach();
+                $widget.append(set_widget_content(profile));
+            });
         });
+        
     });
+    
 
-    $jq('#orcid-widget-js').replaceWith(widget);
+//    $jq('#orcid-widget-js').replaceWith(widget);
 
-    function set_widget_content() {
+    function set_widget_content( profile ) {
         var profile_div = $jq('<div class="orcid-profile">');
-        set_person_works().appendTo(profile_div);
+        set_person_works(profile).appendTo(profile_div);
         var orcid_uri = profile['orcid-identifier']['uri'];
         var orcid_link = $jq('<a class="orcid-profile-uri">');
         orcid_link.attr("href", orcid_uri);
@@ -65,7 +72,7 @@ $jq(document).ready(function () {
         });
     }
 
-    function set_person_works() {
+    function set_person_works( profile ) {
         orcid_path = profile['orcid-identifier']['path'];
         var data = profile['orcid-activities'];
         var span = $jq('<span class="orcid-works">');

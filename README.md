@@ -6,7 +6,18 @@ HTML5
 jQuery 1.9
 
 ## How To
-Supply the div's attribute with ORCID
-iDs. The widget will fetch works for each person in your list.
+Add a the fields `data-role="orcid-works"` and `data-orcids="your-ORCiD-here"` to a `div`. That `div` will contain your list of works from ORCiD.
 
+See (demo page)[Site Root/demo/index.html] for example.
+
+## What's new
+
+* Support for multiple divs, by changing the detection from `id` to `data-role="orcid-works"`
+* Support for loader animation
+* More robust loading.
+
+
+## Found a bug?
+
+This widget is not an official widget or anything, and so may contain various bugs. You are invited to open an issue in the repo, or fork and make a pull request.
 
