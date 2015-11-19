@@ -8,7 +8,7 @@ jQuery 1.9
 ## How To
 Add a the fields `data-role="orcid-works"` and `data-orcids="your-ORCiD-here"` to a `div`. That `div` will contain your list of works from ORCiD.
 
-See [demo page](Site Root/demo/index.html) for example.
+See [demo page](demo/index.html) for example.
 
 ## What's new
 
@@ -19,5 +19,5 @@ See [demo page](Site Root/demo/index.html) for example.
 
 ## Found a bug?
 
-This widget is not an official widget or anything, and so may contain various bugs. You are invited to open an issue in the repo, or fork and make a pull request.
+This widget is not an official widget or anything, and so may contain various bugs. You are invited to [open an issue](https://github.com/michbarsinai/ORCID-WorksList-Widget/issues) in the repo, or fork and make a pull request.
 
