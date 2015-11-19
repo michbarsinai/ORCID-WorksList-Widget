@@ -76,3 +76,27 @@ ul.orcid-external-ids li {
   display: inline-block;
   margin-right: 0.5em;
 }
+
+ul.orcid-external-ids li a {
+    font-size: smaller;
+    font-family: monospace;
+    border-radius: 3px;
+    padding: 3px;
+    background-color: #FFA;
+    box-shadow: 0 1px 2px rgba(0,0,0,.5);
+    display: block;
+    text-decoration: none;
+}
+ul.orcid-external-ids li a:hover {
+    display: block;
+    text-decoration: none;
+    background-color: #DD8;
+    color: black;
+}
+ul.orcid-external-ids li a:active {
+    display: block;
+    text-decoration: none;
+    color: #DD8;
+    background-color: black;
+    box-shadow: 0 0 1px rgba(0,0,0,.5);
+}
