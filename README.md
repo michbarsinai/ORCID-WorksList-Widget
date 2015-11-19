@@ -1,5 +1,5 @@
-# jQuery ORCID Profiles Widget
-A jQuery plugin to show the works stored in an ORCID record. A classic use would be to put a list of works  in a faculty web page.
+# jQuery ORCID Works List Widget
+A jQuery plugin to show the works stored in an [ORCID](http://orcid.org) record. A classic use would be to put a list of works in a faculty web page.
 
 ## Requirements
 HTML5
