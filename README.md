@@ -8,7 +8,7 @@ jQuery 1.9
 ## How To
 Add a the fields `data-role="orcid-works"` and `data-orcids="your-ORCiD-here"` to a `div`. That `div` will contain your list of works from ORCiD.
 
-See (demo page)[Site Root/demo/index.html] for example.
+See [demo page](Site Root/demo/index.html) for example.
 
 ## What's new
 
